@@ -1,0 +1,18 @@
+.bredCrums {
+  background: var(--background-dark);
+  font-size: var(--step--1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  color: var(--text-light);
+  margin-bottom: 1.5em;
+  padding-block: 1em;
+  flex-wrap: wrap;
+  border-radius: var(--border-radius);
+}
+
+.bredCrums svg {
+  font-size: var(--step--1);
+  margin-inline: 0.4em;
+}

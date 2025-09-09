@@ -1,0 +1,135 @@
+.product_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-l-xl);
+  margin-bottom: var(--space-xl-2xl);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: repeat(4, 23%);
+  gap: var(--space-xs-s);
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.images img:nth-child(1) {
+  object-position: top;
+}
+
+.images img:nth-child(2) {
+  grid-area: 1 / 2 / 5 / 3;
+}
+
+.images img:nth-child(3) {
+  object-position: bottom;
+}
+
+.images img:nth-child(4) {
+  object-position: left;
+}
+
+.images img:nth-child(5) {
+  object-position: right;
+}
+
+.product_display h2 {
+  font-size: var(--step-3);
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3xs-2xs);
+  margin-block: var(--space-xs-s) var(--space-s-m);
+}
+
+.stars img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.stars span {
+  font-size: var(--step--1);
+  color: var(--text-light);
+  margin-left: 1em;
+}
+
+.old_price {
+  font-size: var(--step-1);
+  text-decoration: line-through;
+  color: var(--text-light);
+  margin-bottom: 0.3em;
+}
+
+.new_price {
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.product_display .description {
+  font-size: var(--step--1);
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-block: 1.5em;
+}
+
+.size {
+  font-size: var(--step-0);
+}
+
+.size .select_size {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.display_size {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.display_size div {
+  border: var(--border-thick);
+  padding: 0.3em 0.6em;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.display_size div:hover {
+  border-color: var(--primary-color);
+}
+
+.product_display button {
+  margin-block: 2.2em 2.5em;
+  width: 100%;
+}
+
+.display_category {
+  font-size: var(--step--1);
+  margin-bottom: 0.7em;
+  font-weight: 600;
+}
+
+.display_category>span>span {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-left: 0.4em;
+}
+
+@media (width < 48rem) {
+  .product_display {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.newCollections {
+  text-align: center;
+}
+
+.newCollections h2 {
+  font-size: var(--step-3);
+  margin-bottom: 0.5em;
+  letter-spacing: 0.125rem;
+}
+
+.newCollections hr {
+  width: 7rem;
+  height: 0.25rem;
+  background: var(--primary-color);
+  border: none;
+  margin: 0 auto var(--space-m-l);
+  border-radius: 2px;
+}
+
+.collections {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(15.625rem, 1fr);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--background-dark);
+  gap: var(--space-m-l);
+  padding-block: var(--space-xs-s);
+}

@@ -1,0 +1,70 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-l-xl);
+  align-items: center;
+}
+
+.hero_content h2 {
+  font-size: var(--step-3);
+  font-weight: 800;
+  line-height: 1.1;
+  background: var(--gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.new_badge {
+  font-size: var(--step--1);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  background: var(--gradient-accent);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: var(--border-radius);
+  margin-block: 1.5em 1.2em;
+}
+
+.hero_content p {
+  font-size: var(--step-1);
+  color: var(--text-light);
+  margin-bottom: 0.5em;
+}
+
+.cta_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.hero_image {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-hover);
+  position: relative;
+}
+
+.hero_image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, rgba(58, 134, 255, 0.1) 0%, rgba(108, 99, 255, 0.1) 100%);
+  border-radius: var(--border-radius-lg);
+}
+
+.hero_image img {
+  max-height: 25rem;
+}
+
+@media (width < 48rem) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero_content h2 {
+    font-size: var(--step-2);
+  }
+}
