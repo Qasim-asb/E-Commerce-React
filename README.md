@@ -1,12 +1,36 @@
-# React + Vite
+# Shopify E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce website built with React.js, featuring a clean UI with light and dark mode support.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Catalog** - Browse products by categories (Men, Women, Kids)
+- **Shopping Cart** - Add/remove items with persistent cart state
+- **User Authentication** - Login/Signup functionality
+- **Responsive Design** - Optimized for desktop and mobile devices
+- **Dark/Light Mode** - Automatic theme detection based on system preferences
+- **Newsletter Subscription** - Stay updated with latest offers
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js, React Router
+- **Styling**: CSS3 with Variables, CSS Grid, Flexbox
+- **Icons**: React Icons
+- **State Management**: React Context API
+
+## 📸 Screenshots
+
+### Desktop View (Light Mode)
+![Desktop Light Mode](./screenshots/desktop-light.png)
+
+### Mobile View (Dark Mode)  
+![Mobile Dark Mode](./screenshots/mobile-dark.png)
+
+## 🚦 Getting Started
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Qasim-asb/E-Commerce-React.git
+cd E-Commerce-React
